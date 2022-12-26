@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+body{
+    background-color: rgb(238, 238, 238);
+}
+.second_logo{
+    display: none;
+    position: absolute;
+
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
+}
+header{
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.other{
+    display: flex;
+    width: 245px;
+    justify-content: space-between;
+}
+.cart{
+    padding-top: 7px;
+    background-color: white;
+    width: 65px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.logIn p{
+    margin: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.logIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="search"]{
+    width: 485px;
+}
+input{
+    height: 34px;
+}
+.lens:hover{
+    cursor: pointer;
+}
+.menu{
+    background-color: rgba(54, 54, 54, 1);
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(181, 181, 181, 1);
+    text-decoration: none;
+    margin-right: 30px;
+}
+li a:hover{
+    transition: all .4s ease;
+    color: white;
+}
+ul :last-child{
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.block{
+    margin-top: 10px;
+    background: linear-gradient(to right, #151515, #0094FF);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1800px;
+    height: 400px;
+}
+.block__text{
+    width: 488px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.block__text h1{
+    font-size: 46px;
+    max-width: 488px;
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
+.block__text button{
+    cursor: pointer;
+    background-color: rgba(0, 148, 255, 1);
+    height: 55px;
+    width: 285px;
+    border: 0px solid black;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+.big_button{
+    min-width: 400px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
+.image2{
+    height: 271px;
+    width: 271px;
+}
+footer{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    background-color: rgba(54, 54, 54, 1);
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+.numbers {
+    color: white;
+}
+.info a, .social_media a{
+    color: rgba(181, 181, 181, 1);
+}
+.info a:hover, .social_media a:hover{
+    transition: all .4s ease;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+.slider{
+    margin-bottom: 93px;
+    width: 1800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.navigation{
+    position: absolute;
+    left: 50%;
+    top: 1020px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all .4 ease;
+}
+.bar:hover{
+    transform: scale(1.1);
+}
+.bar:active{
+    background-color: #0094FF;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -100%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -200%;
+}
+@media(max-width: 1632px){
+    footer{
+        gap: 400px;
+    }
+}
+@media(max-width: 1436px){
+    footer{
+        gap: 300px;
+    }
+}
+@media(max-width: 1232px){
+    footer{
+        gap: 200px;
+    }
+    .block{
+        justify-content: center;
+        gap: 200px;
+    }
+    .block__text{
+        width: 450px;
+    }
+    .other{
+        width: 200px;
+    }
+    input[type="search"]{
+        width: 355px;
+    }
+}
+@media(max-width: 744px){
+    header{
+        flex-direction: column;
+    }
+    .other{
+        display: flex;
+        width: 345px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        height: 130px;
+    }
+    .menu ul{
+        height: 110px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .block img{
+        position: absolute;
+        display: none;
+    }
+    .block{
+        justify-content: center;
+    }
+    .block__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 502px;
+    }
+    .block__text h1{
+        text-align:center ;
+    }
+    .block__text button{
+        align-items: center;
+    }
+    .navigation{
+        top: 1200px;
+    }
+    footer{
+        gap: 40px;
+    }
+}
+@media(max-width: 320px){
+    .first_logo{
+        position: absolute;
+        display: none;
+    }
+    .second_logo{
+        position: relative;
+        display: block;
+    }
+    .other{
+        width: 250px;
+    }
+    input[type="search"]{
+        width: 185px;
+    }
+    .block__text h1{
+        font-size: 26px;
+        width: 250px;
+    }
+    .block{
+        height: 259px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    footer{
+        flex-direction: column;
+        gap: 0;
+    }
+    .numbers{
+        display: none;
+        position: absolute;
+    }
+    .navigation{
+        top:1020px;  
+    }
+    .menu{
+        height: 250px;
+    }
+    .menu ul{
+        height: 220px;
+    }
+    .slider{
+        height: 260px;
+    }
+    .block__text button{
+        width: 250px;
+        height: 45px;
+    }
+    .big_button{
+        min-width: 200px;
+    }
+    /* .block{
+        max-width: 320px;
+    } */
+    footer{
+        padding-left: 30px;
+    }
+}
