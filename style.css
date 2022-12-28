@@ -236,13 +236,31 @@ input[name="r"]{
     footer{
         gap: 400px;
     }
+    .block{
+        width: 1632px;
+    }
+    .slider{
+        width: 1632px;
+    }
 }
 @media(max-width: 1436px){
+    .block{
+        width: 1436px;
+    }
+    .slider{
+        width: 1436px;
+    }
     footer{
         gap: 300px;
     }
 }
 @media(max-width: 1232px){
+    .block{
+        width: 1232px;
+    }
+    .slider{
+        width: 1232px;
+    }
     footer{
         gap: 200px;
     }
@@ -261,6 +279,12 @@ input[name="r"]{
     }
 }
 @media(max-width: 744px){
+    .block{
+        width: 744px;
+    }
+    .slider{
+        width: 744px;
+    }
     header{
         flex-direction: column;
     }
@@ -301,6 +325,77 @@ input[name="r"]{
     }
     footer{
         gap: 40px;
+    }
+}
+@media(max-width: 425px){
+    .menu{
+        flex-direction: column; 
+        height: 200px;
+        align-items: center;
+    }
+    .menu ul{
+        height: 200px;
+    }
+    .numbers{
+        position: absolute;
+        display: none;
+    }
+    .block__text h1{
+        font-size: 30px;
+        width: 290px;
+    }
+    .block{
+        width: 425px;
+    }
+    .slider{
+        width: 425px;
+    }
+}
+@media(max-width: 375px){
+    .block{
+        width: 375px;
+    }
+    .slider{
+        width: 375px;
+    }
+    input[type="search"]{
+        width: 250px;
+    }
+    .other{
+        justify-content: center;
+        gap: 75px;
+    }
+    .menu{
+        flex-direction: column; 
+        height: 300px;
+        align-items: center;
+    }
+    .menu ul{
+        height: 300px;
+        width: 200px;
+    }
+    .numbers{
+        position: absolute;
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        gap: 0;
+        padding-left: 30px;
+    }
+    .block__text h1{
+        font-size: 26px;
+        width: 250px;
+    }
+    .navigation{
+        top: 1350px;
+    }
+    .block__text button{
+        width: 250px;
+        height: 45px;
+    }
+    .big_button{
+        min-width: 200px;
     }
 }
 @media(max-width: 320px){
@@ -355,9 +450,12 @@ input[name="r"]{
     .big_button{
         min-width: 200px;
     }
-    /* .block{
-        max-width: 320px;
-    } */
+    .block{
+        width: 320px;
+    }
+    .slider{
+        width: 320px;
+    }
     footer{
         padding-left: 30px;
     }
